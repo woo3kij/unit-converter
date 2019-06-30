@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Konwerter jednostek długości</title>
+</head>
+
+<body>
+    <div id="container">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Konwerter jednostek długości</legend><br>
+                <label id="head">Podaj wartość:</label>
+                <input type="text" id="num" name="convert" />
+                <div id="selectFields">
+                    <label class="units">z</label>
+                    <select id="unitsA">
+                        <option value="mm">mm</option>
+                        <option value="cm" selected>cm</option>
+                        <option value="dm">dm</option>
+                        <option value="m">m</option>
+                        <option value="km">km</option>
+                        <option value="in">in</option>
+                        <option value="ft">ft</option>
+                        <option value="yd">yd</option>
+                        <option value="mi">mi</option>
+                    </select>
+                    <label class="units">na</label>
+                    <select id="unitsB">
+                        <option value="mm">mm</option>
+                        <option value="cm">cm</option>
+                        <option value="dm">dm</option>
+                        <option value="m" selected>m</option>
+                        <option value="km">km</option>
+                        <option value="in">in</option>
+                        <option value="ft">ft</option>
+                        <option value="yd">yd</option>
+                        <option value="mi">mi</option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+        <div id="score">
+            <p>Wynik:</p><span>...</span>
+        </div>
+    </div>
+    <script src="converter.js"></script>
+</body>
+
+</html>
